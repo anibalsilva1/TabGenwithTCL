@@ -1,0 +1,30 @@
+name: evaluation
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip=24.0
+  - pip:
+    - xgboost==1.7.6
+    - synthcity
+    - umap-learn
+    - sdmetrics
+    - xgboost
+    - jax
+    - openml
+    - scipy==1.11.4
+    - baycomp
+    - seaborn
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+

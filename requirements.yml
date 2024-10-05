@@ -1,0 +1,13 @@
+name: tensorconformer
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - openml==0.14.2
+    - numpy==1.26.3
+    - tqdm==4.66.4
+    - matplotlib
+    - pandas
+    - torch==2.2.2 --extra-index-url https://download.pytorch.org/whl/cpu
