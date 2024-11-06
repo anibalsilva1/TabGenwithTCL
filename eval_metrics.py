@@ -30,7 +30,7 @@ def main(argv):
     res = []
     for i in tqdm(range(len(cc18_meta)), desc="Evaluation datasets: "):
 
-        task_id = cc18_meta.loc[i, 'task_id']
+        task_id = int(cc18_meta.loc[i, 'task_id'])
         dataset_name = cc18_meta.loc[i, 'dataset_name']
         preprocessor = OpenMLCC18DataProcessor(numerical_transform='quantile')
         datasets, labels, transformations, meta = preprocessor.preprocessor(task_id=task_id)
